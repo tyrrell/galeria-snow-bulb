@@ -12,7 +12,7 @@ Run `cd /home/pi/galeria-snow-bulb` then `./go.sh`
 
 ## How to Run on a Schedule
 
-Install a crontab for the project. Run `crontab -e` to edit the system cron. Use `*/15 4-16 * * * /home/pi/go.sh` to run the script every 15 minutes between 4:00 AM and 4:00 PM, for example.
+Install a crontab for the project. Run `crontab -e` to edit the system cron. Use `*/15 4-16 * * * /home/pi/galeria-snow-bulb/go.sh` to run the script every 15 minutes between 4:00 AM and 4:00 PM, for example.
 
 ## How to Pull Latest Changes
 
