@@ -12,5 +12,4 @@ else
 	python -m flux_led 192.168.0.106 -c 0,255,0
 fi
 
-rm $DIR/response.json $DIR/out.txt
-rmdir $DIR
+rm -rf $DIR
