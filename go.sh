@@ -2,7 +2,7 @@ DIR=`mktemp -d`
 
 curl "https://mtnpowder.com/feed?resortId=65" > $DIR/response.json
 
-cat response.json | sed 's/},{/],\n{/g' | grep "Honeycomb Canyon" | grep "OpenTrailsCount" | sed 's/^.*OpenTrailsCount..\([^,]*\),.*$/\1/g' > $DIR/out.txt
+cat $DIR/response.json | sed 's/},{/],\n{/g' | grep "Honeycomb Canyon" | grep "OpenTrailsCount" | sed 's/^.*OpenTrailsCount..\([^,]*\),.*$/\1/g' > $DIR/out.txt
 
 if [ `cat $DIR/out.txt` == "0" ]; then
 	echo turning bulb red
